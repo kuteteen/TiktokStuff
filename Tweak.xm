@@ -4,8 +4,8 @@
 - (Class )superclass { %log; Class  r = %orig; HBLogDebug(@" = %@", r); return r; }
 - (NSString * )description { %log; NSString *  r = %orig; HBLogDebug(@" = %@", r); return r; }
 - (NSString * )debugDescription { %log; NSString *  r = %orig; HBLogDebug(@" = %@", r); return r; }
-- (void)setContentViewController:(AWEFeedContainerViewController * )contentViewController { %log; %orig; }
-- (AWEFeedContainerViewController * )contentViewController { %log; AWEFeedContainerViewController *  r = %orig; HBLogDebug(@" = %@", r); return r; }
+// - (void)setContentViewController:(AWEFeedContainerViewController * )contentViewController { %log; %orig; }
+// - (AWEFeedContainerViewController * )contentViewController { %log; AWEFeedContainerViewController *  r = %orig; HBLogDebug(@" = %@", r); return r; }
 - (void)setVerticalPan:(UIPanGestureRecognizer * )verticalPan { %log; %orig; }
 //- (UIPanGestureRecognizer * )verticalPan { %log; UIPanGestureRecognizer *  r = %orig; HBLogDebug(@" = %@", r); return r; }
 - (void)setVerticalPanActive:(BOOL )verticalPanActive { %log; %orig; }
@@ -18,8 +18,8 @@
 - (BOOL )skylightButtonTapped { %log; BOOL  r = %orig; HBLogDebug(@" = %d", r); return r; }
 - (void)setRefreshState:(long long )refreshState { %log; %orig; }
 - (long long )refreshState { %log; long long  r = %orig; HBLogDebug(@" = %lld", r); return r; }
-- (void)setRefreshAnimation:(id<AWEFeedRefreshAnimationProtocol> )refreshAnimation { %log; %orig; }
-- (id<AWEFeedRefreshAnimationProtocol> )refreshAnimation { %log; id<AWEFeedRefreshAnimationProtocol>  r = %orig; HBLogDebug(@" = 0x%x", (unsigned int)r); return r; }
+// - (void)setRefreshAnimation:(id<AWEFeedRefreshAnimationProtocol> )refreshAnimation { %log; %orig; }
+// - (id<AWEFeedRefreshAnimationProtocol> )refreshAnimation { %log; id<AWEFeedRefreshAnimationProtocol>  r = %orig; HBLogDebug(@" = 0x%x", (unsigned int)r); return r; }
 - (void)setIsFirstAppear:(BOOL )isFirstAppear { %log; %orig; }
 - (BOOL )isFirstAppear { %log; BOOL  r = %orig; HBLogDebug(@" = %d", r); return r; }
 - (void)setIsViewDidAppear:(BOOL )isViewDidAppear { %log; %orig; }
@@ -33,7 +33,7 @@
 - (void)setVolumeView:(MPVolumeView * )volumeView { %log; %orig; }
 - (MPVolumeView * )volumeView { %log; MPVolumeView *  r = %orig; HBLogDebug(@" = %@", r); return r; }
 // - (void)setRetryViewManager:(AWEPublishRetryViewManager * )retryViewManager { %log; %orig; }
-- (AWEPublishRetryViewManager * )retryViewManager { %log; AWEPublishRetryViewManager *  r = %orig; HBLogDebug(@" = %@", r); return r; }
+// - (AWEPublishRetryViewManager * )retryViewManager { %log; AWEPublishRetryViewManager *  r = %orig; HBLogDebug(@" = %@", r); return r; }
 +(void)_aweLazyRegisterLoad { %log; %orig; }
 -(BOOL)configWithRouterParamDict:(id)arg1  { %log; BOOL r = %orig; HBLogDebug(@" = %d", r); return r; }
 -(unsigned long long)directionForPan:(id)arg1  { %log; unsigned long long r = %orig; HBLogDebug(@" = %llu", r); return r; }
@@ -62,8 +62,8 @@
 -(void)setTapticEngineTapped:(BOOL)arg1  { %log; %orig; }
 -(unsigned long long)verticalPanType { %log; unsigned long long r = %orig; HBLogDebug(@" = %llu", r); return r; }
 -(BOOL)tapticEngineTapped { %log; BOOL r = %orig; HBLogDebug(@" = %d", r); return r; }
--(id<AWEFeedRefreshAnimationProtocol>)refreshAnimation { %log; id<AWEFeedRefreshAnimationProtocol> r = %orig; HBLogDebug(@" = 0x%x", (unsigned int)r); return r; }
--(AWEPublishRetryViewManager *)retryViewManager { %log; AWEPublishRetryViewManager * r = %orig; HBLogDebug(@" = %@", r); return r; }
+// -(id<AWEFeedRefreshAnimationProtocol>)refreshAnimation { %log; id<AWEFeedRefreshAnimationProtocol> r = %orig; HBLogDebug(@" = 0x%x", (unsigned int)r); return r; }
+// -(AWEPublishRetryViewManager *)retryViewManager { %log; AWEPublishRetryViewManager * r = %orig; HBLogDebug(@" = %@", r); return r; }
 -(BOOL)verticalPanActive { %log; BOOL r = %orig; HBLogDebug(@" = %d", r); return r; }
 -(void)setNeedsSetPureMode:(BOOL)arg1  { %log; %orig; }
 -(BOOL)needsSetPureMode { %log; BOOL r = %orig; HBLogDebug(@" = %d", r); return r; }
@@ -105,7 +105,7 @@
 -(void)viewWillDisappear:(BOOL)arg1  { %log; %orig; }
 -(void)viewDidLoad { %log; %orig; }
 -(void)viewWillTransitionToSize:(CGSize)arg1 withTransitionCoordinator:(id)arg2  { %log; %orig; }
--(AWEFeedContainerViewController *)contentViewController { %log; AWEFeedContainerViewController * r = %orig; HBLogDebug(@" = %@", r); return r; }
+// -(AWEFeedContainerViewController *)contentViewController { %log; AWEFeedContainerViewController * r = %orig; HBLogDebug(@" = %@", r); return r; }
 -(void)viewDidAppear:(BOOL)arg1  { %log; %orig; }
 -(long long)preferredStatusBarStyle { %log; long long r = %orig; HBLogDebug(@" = %lld", r); return r; }
 -(long long)refreshState { %log; long long r = %orig; HBLogDebug(@" = %lld", r); return r; }
