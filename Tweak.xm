@@ -30,8 +30,8 @@
 - (BOOL )needsRefreshOnViewDidAppear { %log; BOOL  r = %orig; HBLogDebug(@" = %d", r); return r; }
 - (void)setDelayResetAudioSessionBlock:(id )delayResetAudioSessionBlock { %log; %orig; }
 - (id )delayResetAudioSessionBlock { %log; id  r = %orig; HBLogDebug(@" = %@", r); return r; }
-- (void)setVolumeView:(MPVolumeView * )volumeView { %log; %orig; }
-- (MPVolumeView * )volumeView { %log; MPVolumeView *  r = %orig; HBLogDebug(@" = %@", r); return r; }
+// - (void)setVolumeView:(MPVolumeView * )volumeView { %log; %orig; }
+// - (MPVolumeView * )volumeView { %log; MPVolumeView *  r = %orig; HBLogDebug(@" = %@", r); return r; }
 // - (void)setRetryViewManager:(AWEPublishRetryViewManager * )retryViewManager { %log; %orig; }
 // - (AWEPublishRetryViewManager * )retryViewManager { %log; AWEPublishRetryViewManager *  r = %orig; HBLogDebug(@" = %@", r); return r; }
 +(void)_aweLazyRegisterLoad { %log; %orig; }
@@ -51,12 +51,12 @@
 -(BOOL)awesst_isVideoPlayViewController { %log; BOOL r = %orig; HBLogDebug(@" = %d", r); return r; }
 -(id)awesst_additionalTrackerParams { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
 -(void)stopRefreshAnimation { %log; %orig; }
--(void)setRetryViewManager:(AWEPublishRetryViewManager *)arg1  { %log; %orig; }
+// -(void)setRetryViewManager:(AWEPublishRetryViewManager *)arg1  { %log; %orig; }
 -(void)setVerticalPan:(UIPanGestureRecognizer *)arg1  { %log; %orig; }
 -(UIPanGestureRecognizer *)verticalPan { %log; UIPanGestureRecognizer * r = %orig; HBLogDebug(@" = %@", r); return r; }
 -(void)setVerticalPanType:(unsigned long long)arg1  { %log; %orig; }
 -(void)setVerticalPanActive:(BOOL)arg1  { %log; %orig; }
--(void)setRefreshAnimation:(id<AWEFeedRefreshAnimationProtocol>)arg1  { %log; %orig; }
+// -(void)setRefreshAnimation:(id<AWEFeedRefreshAnimationProtocol>)arg1  { %log; %orig; }
 -(void)setRefreshState:(long long)arg1  { %log; %orig; }
 -(void)refreshWithType:(long long)arg1 completion:(/*^block*/id)arg2  { %log; %orig; }
 -(void)setTapticEngineTapped:(BOOL)arg1  { %log; %orig; }
@@ -110,12 +110,12 @@
 -(long long)preferredStatusBarStyle { %log; long long r = %orig; HBLogDebug(@" = %lld", r); return r; }
 -(long long)refreshState { %log; long long r = %orig; HBLogDebug(@" = %lld", r); return r; }
 -(BOOL)prefersStatusBarHidden { %log; BOOL r = %orig; HBLogDebug(@" = %d", r); return r; }
--(MPVolumeView *)volumeView { %log; MPVolumeView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+// -(MPVolumeView *)volumeView { %log; MPVolumeView * r = %orig; HBLogDebug(@" = %@", r); return r; }
 -(void)handlePanGesture:(id)arg1  { %log; %orig; }
 -(BOOL)isFirstAppear { %log; BOOL r = %orig; HBLogDebug(@" = %d", r); return r; }
 -(BOOL)refreshWithCompletion:(/*^block*/id)arg1  { %log; BOOL r = %orig; HBLogDebug(@" = %d", r); return r; }
 -(id)discoveryController { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
 -(void)pop_animationDidStop:(id)arg1 finished:(BOOL)arg2  { %log; %orig; }
 -(void)setSystemVolume:(float)arg1  { %log; %orig; }
--(void)setVolumeView:(MPVolumeView *)arg1  { %log; %orig; }
+// -(void)setVolumeView:(MPVolumeView *)arg1  { %log; %orig; }
 %end
